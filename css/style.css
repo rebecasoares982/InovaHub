@@ -41,13 +41,15 @@
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #1873C8;
-  --secondary-color: #6a6c6e;
-  --tertiary-color: #03192a;
-  --section-bg-color: #f0f8ff;
-  --site-footer-bg-color: #1872C6;
+  --primary-color: #8058ff;
+  --secondary-color: #d8ccff;
+  ;
+  --tertiary-color: #0a0129;
+  --cinza-color: #6a6c6e;
+  --section-bg-color: #f8f0ff;
+  --site-footer-bg-color: #0a0129;
   --custom-btn-bg-color: #597081;
-  --custom-btn-bg-hover-color: #1872C6;
+  --custom-btn-bg-hover-color: #604f9e;
   --dark-color: #000000;
   --p-color: #717275;
   --border-color: #e9eaeb;
@@ -112,7 +114,7 @@ h1 {
 }
 
 h2 {
-  color: var(--secondary-color);
+  color: var(--white-color);
   font-size: var(--h2-font-size);
   letter-spacing: -2px;
 }
@@ -127,7 +129,7 @@ h4 {
 }
 
 h5 {
-  color: var(--white-color);
+  color: var(--tertiary-color);
   font-size: var(--h5-font-size);
 }
 
@@ -172,8 +174,9 @@ strong {
   SECTION               
 -----------------------------------------*/
 .section-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--tertiary-color)
 }
 
 .section-bg {
@@ -211,14 +214,19 @@ strong {
 }
 
 .custom-block-body {
-  padding: 30px;
+  border-top: 2px solid var(--border-color);
+  text-align: center;
+  padding: 12px;
+  height: 155px;
 }
 
 .custom-block-image {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 50% !important;
+  height: 100% !important;
   object-fit: cover;
+  margin: auto;
+  padding-top: 15px;
 }
 
 .custom-block .custom-btn {
@@ -244,7 +252,7 @@ strong {
   CUSTOM ICON COLOR               
 -----------------------------------------*/
 .custom-icon {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .fa-landmark,
@@ -257,7 +265,9 @@ strong {
   font-size: 100px;
 }
 
-.fa-flag, .fa-eye, .fa-people-roof {
+.fa-flag,
+.fa-eye,
+.fa-people-roof {
   color: #87898b;
   font-size: 30px;
 }
@@ -270,7 +280,10 @@ strong {
   font-size: 16px;
 }
 
-.fa-facebook, .fa-instagram, .fa-linkedin, .fa-youtube {
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin,
+.fa-youtube {
   font-size: 18px;
 }
 
@@ -304,13 +317,13 @@ strong {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
   margin-bottom: 24px;
-  padding: 40px;
+  padding: 25px;
 }
 
 .custom-text-box-image {
   border-radius: var(--border-radius-medium);
   width: 100%;
-  height: 100%;
+  height: 540px;
   object-fit: cover;
 }
 
@@ -343,14 +356,14 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   border: 2px solid transparent;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
-  font-size: var(--btn-font-size);
+  font-size: 16px;
   font-weight: var(--font-weight-normal);
   line-height: normal;
-  padding: 15px 25px;
+  padding: 5px 16px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn {
@@ -365,30 +378,33 @@ strong {
 }
 
 .custom-border-btn {
+  border: 2px solid var(--custom-btn-bg-color);
+  color: var(--white-color);
+  background: var(--primary-color);
+  font-size: var(--p-font-size);
+}
+
+
+.custom-border-btn:hover {
   background: transparent;
   border: 2px solid var(--custom-btn-bg-color);
   color: var(--primary-color);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
-.custom-border-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
-  border-color: transparent;
-  color: var(--white-color);
-}
- 
+
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
 .navbar {
-  background: var(--white-color);
+  background: var(--primary-color) !important;
   z-index: 9;
   padding-top: 0;
   padding-bottom: 0;
+  color: var(--white-color);
 }
 
 .navbar-brand {
-  color: var(--primary-color);
+  color: var(--white-color);
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-bold);
 }
@@ -407,8 +423,8 @@ strong {
 }
 
 .logo {
-  width: 150px;
-  height: 90px;
+  width: 180px;
+  height: 60px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -419,7 +435,7 @@ strong {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--p-color);
+  color: var(--white-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-medium);
   position: relative;
@@ -430,7 +446,7 @@ strong {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   background: transparent;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .dropdown-menu {
@@ -560,7 +576,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background: var(--primary-color);
+  background: var(--tertiary-color);
   padding-top: 15px;
   padding-bottom: 10px;
 }
@@ -600,8 +616,8 @@ strong {
 }
 
 #hero-slide .carousel-item {
-  height: 680px;
-  min-height: 680px;
+  height: 320px;
+  min-height: 280px;
 }
 
 #hero-slide .carousel-caption {
@@ -613,15 +629,30 @@ strong {
   right: 0;
   left: auto;
   text-align: right;
-  min-width: 680px;
-  min-height: 680px;
+  width: 100%;
+  min-height: 280px;
   padding: 100px 100px 50px 100px;
 }
 
 .carousel-image {
   display: block;
   width: 100%;
-  min-height: 680px;
+  min-height: 280px;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 88%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  padding-bottom: 18px;
+  margin: 18px;
 }
 
 #hero-slide .carousel-indicators-wrap {
@@ -647,8 +678,8 @@ strong {
   background-color: var(--secondary-color);
   border-radius: var(--border-radius-large);
   background-size: 60% 60%;
-  width: 80px;
-  height: 80px;
+  width: 45px;
+  height: 45px;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -662,9 +693,10 @@ strong {
   BOTÃO PASSAR PÁGINA        
 -----------------------------------------*/
 .hero-section-full-height {
-  height: 680px;
-  min-height: 680px;
+  height: 288px;
+  min-height: 280px;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .nav-carousel:hover .nav.carousel-control-next-icon,
@@ -731,12 +763,15 @@ strong {
 .featured-block {
   text-align: center;
   transition: all 0.5s ease;
-  min-height: 256px;
+  min-height: 215px;
   padding: 15px;
+  background: var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  color: var(--white-color);
 }
 
 .featured-block:hover {
-  background: var(--white-color);
+  color: var(--white-color);
   border-radius: var(--border-radius-medium);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
@@ -756,12 +791,15 @@ strong {
 }
 
 .featured-block-text {
-  color: var(--primary-color);
+  color: var(--white-color);
   font-size: var(--h5-font-size);
   margin-top: 20px;
   transition: all 0.5s;
 }
 
+.featured-block i {
+  color: var(--white-color);
+}
 
 /*---------------------------------------
   ABOUT              
@@ -781,7 +819,7 @@ strong {
 }
 
 .custom-text-block {
-  padding: 60px 40px;
+  padding: 2px 8px;
 }
 
 
@@ -924,7 +962,12 @@ strong {
 }
 
 .news-block-title-link {
-  color: var(--dark-color);
+  color: var(--tertiary-color);
+}
+
+.news-image.img-noticia-recente {
+  width: 150px;
+  height: 100px;
 }
 
 .news-detail-image {
@@ -1021,13 +1064,13 @@ blockquote::before {
 
 .cta-section::after {
   content: "";
-  border: 20px solid var(--custom-btn-bg-color);
+  border: 20px solid var(--primary-color);
   border-radius: 50%;
   position: absolute;
-  bottom: -100px;
+  /*bottom: -100px;*/
   right: 0;
   left: 0;
-  margin: auto;
+  margin-left: auto;
   width: 150px;
   height: 150px;
 }
@@ -1044,7 +1087,7 @@ blockquote::before {
 
 .testimonial-section::before {
   content: "";
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   border-radius: 50%;
   position: absolute;
   top: -100px;
@@ -1056,10 +1099,10 @@ blockquote::before {
 
 .testimonial-section::after {
   content: "";
-  background: var(--custom-btn-bg-color);
+  background: var(--primary-color);
   border-radius: 50%;
   position: absolute;
-  bottom: -110px;
+  bottom: -210px;
   right: -80px;
   width: 350px;
   height: 350px;
@@ -1308,7 +1351,7 @@ blockquote::before {
 }
 
 .custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
+  background: var(--primary-color);
   border: none;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -1356,7 +1399,7 @@ blockquote::before {
 }
 
 .subscribe-form {
-  background: var(--section-bg-color);
+  background: var(--secondary-color);
   border-radius: var(--border-radius-small);
   padding: 30px;
 }
@@ -1375,16 +1418,16 @@ blockquote::before {
 -----------------------------------------*/
 .site-footer {
   background-color: var(--site-footer-bg-color);
-  padding-top: 70px;
+  padding-top: 0px;
 }
 
 .site-footer-bottom {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   position: relative;
-  z-index: 2;
-  margin-top: 70px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  z-index: 1;
+  /* margin: auto; */
+  padding-top: 19px;
+  padding-bottom: 12px;
 }
 
 .site-footer-bottom a {
@@ -1400,9 +1443,9 @@ blockquote::before {
 }
 
 .copyright-text {
-  color: var(--section-bg-color);
+  color: var(--tertiary-color);
   font-size: var(--copyright-font-size);
-  margin-right: 30px;
+  margin-top: 8px !important;
 }
 
 .site-footer .custom-btn {
@@ -1468,6 +1511,8 @@ blockquote::before {
 .social-icon-link:hover {
   background: var(--primary-color);
   color: var(--white-color);
+  width: 25px;
+  height: 23px;
 }
 
 .instagram-media {
@@ -1494,22 +1539,26 @@ blockquote::before {
 /* Botão pesquisar cursos */
 
 .form_book .date {
-        color: #7e7e7e;
-        font-weight: bold;
-        font-size: 15px;
-        text-transform: uppercase;
-        padding-left: 17px;
+  color: #7e7e7e;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 17px;
 }
 
 .book_n {
-    border: inherit;
-    border-radius: 20px;
-    background-color: #eeeeee;
-    width: 100%;
-    font-size: 16px;
-    height: auto;
-    line-height: normal;
-    padding: 10px 20px;
+  border: inherit;
+  border-radius: 20px;
+  background-color: #eeeeee;
+  width: 100%;
+  font-size: 16px;
+  height: auto;
+  line-height: normal;
+  padding: 10px 20px;
+}
+
+h5.site-footer-title {
+  color: var(--white-color);
 }
 
 /*---------------------------------------
