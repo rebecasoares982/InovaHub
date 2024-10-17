@@ -1,6 +1,4 @@
-###Aqui está uma sugestão de descrição para o README do GitHub para o projeto da InovaHub:
-
-InovaHub - Soluções Tecnológicas Inovadoras
+#InovaHub - Soluções Tecnológicas Inovadoras
 
 Este repositório contém o código-fonte do projeto InovaHub, uma plataforma focada em oferecer soluções tecnológicas personalizadas para empresas que buscam otimizar seus processos, melhorar a gestão e impulsionar a inovação. Nosso objetivo é fornecer sistemas inteligentes, automatizados e integrados que permitam a transformação digital e o crescimento sustentável dos negócios.
 
