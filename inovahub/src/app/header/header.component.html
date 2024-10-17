@@ -1,0 +1,69 @@
+<header class="site-header">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                <ul class="social-icon">
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link fa-brands fa-facebook"></a>
+                    </li>
+
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link fa-brands fa-instagram"></a>
+                    </li>
+
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link fa-brands fa-linkedin"></a>
+                    </li>
+
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link fa-brands fa-youtube"></a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+    <div class="container">
+        <a class="navbar-brand" [routerLink]="['/homepage']">
+            <img src="assets/images/logo-inova.png" class="logo img-fluid" alt="IMAP">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" [routerLink]="['/homepage']">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link click-pagination" [routerLink]="['/sobre-nos']">Sobre nós</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link click-pagination"  [routerLink]="['/consultoria']">Consultoria</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link click-pagination"  [routerLink]="['/sistemas']">Sistemas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link click-pagination"  [routerLink]="['/noticias']">Notícias</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link click-pagination"  [routerLink]="['/fale-conosco']">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

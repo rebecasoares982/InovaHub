@@ -1,0 +1,96 @@
+<main>
+    <section class="section-bg" id="section_2" style="padding-bottom: 28px;">
+        <div class="container">
+            <div class="row">
+
+                <div class="mb-3" style="--bs-breadcrumb-divider: '>';">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink]="['/homepage']"> Início</a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="['/consultoria']">Fale Conosco</a></li>
+                    </ol>
+                </div>
+
+                <h3 class="mb-2">Fale Conosco</h3>
+                <div>
+                    <br>
+                    <img src="assets/images/fale-conosco.png" class="custom-text-box-image img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-12 mx-auto mb-5 mb-lg-0">
+                    <div class="contact-info-wrap">
+                        <div class="contact-info">
+
+                            <h4 class="mb-3"> Contato:</h4>
+                            <p class="d-flex">
+                                <i class="fa-regular fa-envelope me-1 p-1"></i>
+
+                                <a href="mailto:info@yourgmail.com">
+                                    faleconosco@inovahub.com.br
+                                </a>
+                            </p>
+
+                            <p class="d-flex mb-2">
+                                <i class="fa-solid fa-phone me-1 p-1"></i>
+
+                                <a href="tel: (11) 3022-8745 | (11) 99842-4541">
+                                    (11) 3022-8745 | (11) 99842-4541
+                                </a>
+                            </p>
+
+                            <br>
+
+                            <h4 class="mb-3"> Sede da Inova</h4>
+
+                            <p class="d-flex mb-2">
+                                <i class="fa-solid fa-location-dot me-1 p-1"></i>
+                                Av. da Inovação, 834.
+                                <br>
+                                Edifício Inova Center, Sala 405, Centro, Campinas, SP.
+                                <br>
+                                CEP: 11485-544, Brasil.
+                            </p>
+
+                            <a class="custom-btn btn mt-3">Localização</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-12 mx-auto">
+                    <form class="custom-form contact-form" action="#" method="post" role="form">
+                        <h4>Formulário</h4>
+
+                        <p class="mb-">Nossa equipe está sempre à disposição para atendê-lo! <br>
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <input type="text" name="first-name" id="first-name" class="form-control"
+                                    placeholder="Nome" required>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <input type="text" name="last-name" id="last-name" class="form-control"
+                                    placeholder="Sobrenome" required>
+                            </div>
+                        </div>
+
+                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                            placeholder="E-mail" required>
+
+                        <textarea name="message" rows="3" class="form-control" id="message"
+                            placeholder="Como podemos te ajudar?"></textarea>
+
+                        <button type="submit" class="form-control">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
