@@ -12,7 +12,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { ConsultoriaComponent } from './consultoria/consultoria.component';
 import { SistemasComponent } from './sistemas/sistemas.component';
-import { CursosComponent } from './cursos/cursos.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 
@@ -27,7 +26,6 @@ import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
     SobreNosComponent,
     ConsultoriaComponent,
     SistemasComponent,
-    CursosComponent,
     NoticiasComponent,
     FaleConoscoComponent
   ],

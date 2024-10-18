@@ -8,7 +8,6 @@ import { ApresentacaoHomepageComponent } from './apresentacao-homepage/apresenta
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { ConsultoriaComponent } from './consultoria/consultoria.component';
 import { SistemasComponent } from './sistemas/sistemas.component';
-import { CursosComponent } from './cursos/cursos.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 
@@ -22,9 +21,8 @@ const routes: Routes = [
   { path: 'sobre-nos', component: SobreNosComponent },
   { path: 'consultoria', component: ConsultoriaComponent },
   { path: 'sistemas', component: SistemasComponent },
-  { path: 'cursos', component: CursosComponent }, 
-  { path: 'noticias', component: NoticiasComponent }, 
-  { path: 'fale-conosco', component: FaleConoscoComponent }, 
+  { path: 'noticias', component: NoticiasComponent },
+  { path: 'fale-conosco', component: FaleConoscoComponent },
 ];
 
 @NgModule({
