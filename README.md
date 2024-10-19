@@ -6,6 +6,7 @@ Este repositório contém o código-fonte do projeto InovaHub, uma plataforma fo
 [![CSS3](https://img.shields.io/badge/CSS3-blue.svg?logo=css3)](https://www.w3.org/Style/CSS/)
  [![Typescript](https://img.shields.io/badge/Typescript-blue.svg?color=294E80&logo=typescript)](https://www.typescriptlang.org/)
 [![Angular](https://img.shields.io/badge/Angular-red.svg?logo=angular)](https://angular.io/) [![Bootstrap](https://img.shields.io/badge/Bootstrap-white.svg?logo=bootstrap)](https://getbootstrap.com/)
+[![Font Awesome](https://img.shields.io/badge/fontawesome-339AF0?style=flat-square&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
 
 ------------------------
 ![homepage-InovaHub](https://github.com/user-attachments/assets/e73f256b-d1f7-4a49-82ce-9b47f2a32e44)
